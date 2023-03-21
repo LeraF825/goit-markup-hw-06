@@ -333,12 +333,12 @@
             </svg>
         </button>
         <form class="modal-form">
-            <strong>Leave your contacts and we will call you back</strong>
+            <strong class="modal-strong">Leave your contacts and we will call you back</strong>
             <div class="modal-group">
                 <label class="modal-label" for="name">Name</label>
                 <div class="input-wrapper">
                     <input class="modal-input" type="text" id="name" />
-                    <svg class="modal-icon" width="18" height="24" >
+                    <svg class="modal-icon-group" width="18" height="24" >
                         <use href="./images/icons.svg#icon-name"></use>
                     </svg>
                 </div>
@@ -347,7 +347,7 @@
                 <label class="modal-label" for="tel">Phone</label>
                 <div class="input-wrapper">
                     <input class="modal-input" type="tel" id="tel" />
-                    <svg class="modal-icon" width="18" height="24" >
+                    <svg class="modal-icon-group" width="18" height="24" >
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
@@ -356,25 +356,28 @@
                 <label class="modal-label" for="email">Email</label>
                 <div class="input-wrapper">
                     <input class="modal-input" type="email" id="email" />
-                    <svg class="modal-icon" width="18" height="24" >
+                    <svg class="modal-icon-group" width="18" height="24" >
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
             </div>
             <div class="modal-group">
                 <label class="modal-label" for="comment">Comment</label>
-                <textarea class="modal-comments" name="comment" id="comment" rows="5"></textarea>
+                <textarea class="modal-comments" name="comment" id="comment" rows="7" placeholder="Text input"></textarea>
             </div>
-            <div class="modal-checkbox">
-                <input class="modal-checkbox-input visually-hidden" type="checkbox" id="checkbox" />
-                <label class="modal-checkbox-label" for="checkbox">
-                    <span class="modal-checkbox-custom">
-                        <svg class="modal-checkbox-icon" width="" height="">
-                            <use href="#"></use>
-                        </svg>
-                    </span>I accept the terms and conditions of the
+            <label class="modal-form-agreement">
+                <input class="modal-form-checkbox" type="checkbox">
+                <svg class="modal-form-custom-checkbox" width="" height="">
+                    <use href=""></use>
+                    <use href=""></use>
+                </svg>
+                <span>I accept the terms and conditions of the 
+                    <a href="">Privacy Policy</a>
+                </span>
+            </label>
+                    </span>
                 </label>
-                <a href="">Privacy Policy</a>
+                <button class="modal-group-btn" type="submit">Send</button>
             </div>
         </form>
     </div>

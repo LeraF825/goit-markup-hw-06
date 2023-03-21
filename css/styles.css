@@ -299,19 +299,17 @@ border-radius: 0px 0px 4px 4px;
     gap: 24px;
     margin-top: 72px;
 }
-.customers-item {
- 
-}
 .customers-link {
     display: flex;
     padding: 16px 32px;
     border: 1px solid var(--customers-border);
     border-radius: 4px;
     outline: transparent;
-    transition: border var(--transition-effect), fill var(--transition-effect);
+    transition: border var(--transition-effect); 
 }
 .customers-icon {
     fill: var(--customers-border);
+    transition:fill var(--transition-effect);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -492,14 +490,29 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 textarea {
     resize: none;
 }
+.modal-strong {
+    display: flex;
+    margin-bottom: 16px;
+    font-weight: 500;
+font-size: 16px;
+line-height: calc(24/16);
+text-align: center;
+letter-spacing: 0.02em;
+justify-content: center;
+color: var(--secondary-color);
+}
 .modal-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
+    font-size: 12px;
+line-height: calc(14/12);
+letter-spacing: 0.04em;
+color: var(--customers-border);
+margin-bottom: 8px;
 }
-.modal-group:not(:last-child)
-{
-    margin-bottom:10px;
+.modal-group:not(:last-child) {
+    margin-bottom: 8px; 
 }
 .modal-input {
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -508,15 +521,43 @@ width: 100%;
 height: 40px;
 padding-left: 35px;
 padding-right: 5px;
+font-size: 12px;
+line-height: calc(14/12);
+letter-spacing: 0.04em;
 outline: transparent;
+transition: border-color var(--transition-effect);
 }
+.modal-input:focus + .modal-icon-group {
+    fill: var(--primary-brand);
+  }
+.modal-input:focus {
+    border-color: var(--primary-brand);
+  }
 .input-wrapper {
     position: relative;
 }
-.modal-icon {
+.modal-icon-group {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    left: 16px;
+    fill: var(--secondary-color);
+    transition: fill var(--transition-effect);
+}
+.modal-comments {
+display: block;
+width: 100%;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 8px 16px;
+font-size: 12px;
+line-height: calc(14/12);
+letter-spacing: 0.04em;
+outline: transparent;
+transition: border-color var(--transition-effect);
+}
+.modal-comments:focus {
+    border-color: var(--primary-brand);
 }
 .overlay {
     position: absolute;
@@ -540,4 +581,7 @@ transition: transform var(--transition-effect);
 .link-menu:hover .overlay ,
 .link-menu:focus .overlay {
     transform: translateY(0);
+}
+.modal-checkbox {
+
 }
