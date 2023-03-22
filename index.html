@@ -323,6 +323,17 @@
         </li>
     </ul>
        </div>  
+       <div class="subscribe">
+        <h2 class="section-subscribe">Subscribe</h2>
+        <form class="footer-form">
+            <input class="footer-input" type="email-footer" id="email-footer" placeholder="E-mail">
+            <button class="subscribe-btn" type="submit">Subscribe
+                <svg class="icon-subscribe" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Frame"></use>
+                </svg>
+            </button>
+        </form>
+       </div>
     </div>
  </footer>
  <div class="backdrop " data-modal>
@@ -363,20 +374,28 @@
             </div>
             <div class="modal-group">
                 <label class="modal-label" for="comment">Comment</label>
-                <textarea class="modal-comments" name="comment" id="comment" rows="7" placeholder="Text input"></textarea>
+                <textarea class="modal-comments" name="comment" id="comment" rows="7" placeholder="Text input">
+                </textarea>
             </div>
-            <label class="modal-form-agreement">
-                <input class="modal-form-checkbox" type="checkbox">
-                <svg class="modal-form-custom-checkbox" width="" height="">
-                    <use href=""></use>
-                    <use href=""></use>
-                </svg>
-                <span>I accept the terms and conditions of the 
-                    <a href="">Privacy Policy</a>
-                </span>
-            </label>
+            <div class="modal-group-agreement">
+                <label class="modal-form-agreement">
+                    <input class="modal-form-checkbox visually-hidden" type="checkbox">
+                    <svg class="modal-form-custom-checkbox" width="16" height="16">
+                        <use
+                         class="unchecked" 
+                         href="./images/icons.svg#icon-unchecked">
+                        </use>
+                        <use 
+                        class="checked"
+                        href="./images/icons.svg#icon-checked">
+                       </use>
+                    </svg>
+                    <span class="modal-form-agreement-text"
+                    >I accept the terms and conditions of the 
+                    <a class="agreement-link" href="#">Privacy Policy</a>
                     </span>
                 </label>
+            </div>
                 <button class="modal-group-btn" type="submit">Send</button>
             </div>
         </form>
