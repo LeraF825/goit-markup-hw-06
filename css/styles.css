@@ -432,7 +432,7 @@ color: var(--third-color);
 border-radius: 4px;
 cursor: pointer;
 border: none;
-transition: border-color var(--transition-effect);
+transition: background-color var(--transition-effect);
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
