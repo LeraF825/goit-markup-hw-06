@@ -353,7 +353,7 @@ letter-spacing: 0.02em;
     max-width: 208px;
     max-height: 80px;
     margin-left: 120px;
-    margin-right: 80px;
+    margin-right: auto;
 }
 .media-title {
 font-weight: 500;
@@ -405,6 +405,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: var(--secondary-color);
 margin-right: 24px;
+padding-left: 16px;
 font-size: 12px;
 line-height: calc(24/12);
 align-items: center;
@@ -542,11 +543,8 @@ transition: transform var(--transition-effect);
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 408px;
-height: 576px;
-padding-top: 72px;
-padding-right: 24px;
-padding-bottom: 24px;
-padding-left: 24px;
+padding: 72px 24px 24px 24px;
+margin-bottom: 24px;
 background: var(--modal-window);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
@@ -563,10 +561,16 @@ justify-content: center;
 border-radius: 50%;
 background-color: var(--accent-color);
 border: 1px solid rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: background-color var(--transition-effect);
 }
 .modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:focus  {
 background-color: var(--pressed-state);
+}
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
+fill : var(--third-color);
 }
 textarea {
     resize: none;
@@ -680,7 +684,6 @@ user-select: none;
 .modal-group-btn {
     display: block;
     margin: 0 auto;
-    margin-bottom: 24px;
     padding: 16px 32px;
     font-family: var(--primary-font-family);
     font-weight: 500;
